@@ -5,5 +5,6 @@ import tailwindcss from "@tailwindcss/vite"
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
-  base:'./',
+  // 修改 base 配置
+  base: '/SFHHSS123/', 
 });
