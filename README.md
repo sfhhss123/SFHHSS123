@@ -4,6 +4,19 @@ This template should help get you started developing with Vue 3 and TypeScript i
 
 Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
 
+5.11
+部署终于完成
+gh-pages 分支 有修改打包配置的更新
+仓库必须是公开的
+打包后的dist文件夹中的文件需要上传到gh-pages分支的根目录，否则访问不到
+
+如果你要将项目部署到 GitHub Pages，需要将 base 配置项设置为你的仓库名称
+vite.config.ts文件中的
+export default defineConfig({
+  plugins: [vue(), tailwindcss()],
+  base: '/SFHHSS123/',
+});
+
 5.10
 "build": "vue-tsc --noEmit --skipLibCheck && vite build",
 // "build" 脚本用于构建项目。首先执行 "vue-tsc --noEmit --skipLibCheck" 命令，
